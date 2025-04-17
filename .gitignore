@@ -1,0 +1,32 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Configuración de usuario (Visual Studio/VSCode)
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+
+# Rider / ReSharper
+.idea/
+*.DotSettings.user
+_ReSharper*/
+
+# Permitir appsettings.json pero ignorar otros entornos opcionalmente
+#appsettings.*.json
+!appsettings.json
