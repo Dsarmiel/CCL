@@ -53,7 +53,7 @@ Este proyecto utiliza las siguientes dependencias:
 - `Newtonsoft.Json`  
 - `Microsoft.AspNetCore.Mvc.NewtonsoftJson`  
 - `Microsoft.EntityFrameworkCore`  
-- `Microsoft.EntityFrameworkCore.SqlServer`  
+- `Npgsql.EntityFrameworkCore.PostgreSQL`
 - `Microsoft.EntityFrameworkCore.Relational`  
 - `Microsoft.EntityFrameworkCore.Design`  
 - `Microsoft.AspNetCore.Authentication.JwtBearer`
