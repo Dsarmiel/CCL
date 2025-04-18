@@ -1,3 +1,4 @@
+using CCL.Infrastructure.DB;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -13,6 +14,12 @@ builder.Services.AddOpenApi();
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+});
+
+//PostgreSQL DB Connection
+builder.Services.AddDbContext<ApplicationDBContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 
