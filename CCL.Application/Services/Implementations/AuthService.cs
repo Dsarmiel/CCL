@@ -3,7 +3,7 @@
 // </copyright>
 namespace CCL.Application.Services.Implementations
 {
-    using CCL.Application.DTOs;
+    using CCL.Application.DTOs.Auth;
     using CCL.Application.Services.Interfaces;
     using CCL.Application.Validations;
     using CCL.Shared.Response;

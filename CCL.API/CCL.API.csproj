@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CCL.Application\CCL.Application.csproj" />
-    <ProjectReference Include="..\CCL.Domain\CCL.Domain.csproj" />
     <ProjectReference Include="..\CCL.Shared\CCL.Shared.csproj" />
     <ProjectReference Include="..\CSS.Infrastructure\CCL.Infrastructure.csproj" />
   </ItemGroup>

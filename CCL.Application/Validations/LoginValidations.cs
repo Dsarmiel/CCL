@@ -4,7 +4,7 @@
 
 namespace CCL.Application.Validations
 {
-    using CCL.Application.DTOs;
+    using CCL.Application.DTOs.Auth;
 
     /// <summary>
     /// Proporciona métodos para validar las credenciales de inicio de sesión de un usuario.

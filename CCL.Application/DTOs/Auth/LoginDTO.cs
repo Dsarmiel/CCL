@@ -2,7 +2,7 @@
 // Copyright (c) CCL. All rights reserved.
 // </copyright>
 
-namespace CCL.Application.DTOs
+namespace CCL.Application.DTOs.Auth
 {
     using System.ComponentModel.DataAnnotations;
 
