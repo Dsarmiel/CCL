@@ -29,7 +29,6 @@ Encapsula los modelos y reglas de negocio principales.
 
 - `Entities/` – Entidades del dominio que representan el modelo de negocio.
 - `Repositories/` – Interfaces que definen el contrato de acceso a datos.
-- `Exceptions/` – Excepciones específicas del dominio.
 
 ### 📂 `CCL.Infrastructure` - Capa de Infraestructura
 
@@ -42,7 +41,6 @@ Encargada de la persistencia y detalles técnicos como el acceso a datos.
 
 Componentes reutilizables y utilitarios comunes para todas las capas.
 
-- `Exceptions/` – Excepciones comunes reutilizables.
 - `Response/` – Modelos estándar de respuesta de la API.
 - `Utils/` – Clases utilitarias y helpers generales.
 
@@ -52,8 +50,9 @@ Este proyecto utiliza las siguientes dependencias:
 
 - `Newtonsoft.Json`  
 - `Microsoft.AspNetCore.Mvc.NewtonsoftJson`  
-- `Microsoft.EntityFrameworkCore`  
+- `Microsoft.EntityFrameworkCore` 
 - `Npgsql.EntityFrameworkCore.PostgreSQL`
+- `StyleCop.Analyzers`  
 - `Microsoft.EntityFrameworkCore.Relational`  
 - `Microsoft.EntityFrameworkCore.Design`  
 - `Microsoft.AspNetCore.Authentication.JwtBearer`
