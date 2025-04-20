@@ -156,7 +156,6 @@ Encargada de la persistencia y detalles técnicos como el acceso a datos.
 Componentes reutilizables y utilitarios comunes para todas las capas.
 
 - `Response/` – Modelos estándar de respuesta de la API.
-- `Utils/` – Clases utilitarias y helpers generales.
 
 ## 🧩 Paquetes Instalados
 
