@@ -33,6 +33,17 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Cors Config
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("All", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 // Config to Jwt Settings
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JWT"));
 
@@ -71,6 +82,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseCors("All");
 
 app.UseHttpsRedirection();
 
