@@ -4,14 +4,14 @@
 
 namespace CCL.API.Controllers
 {
-    using CCL.Application.DTOs;
+    using CCL.Application.DTOs.Auth;
     using CCL.Application.Services.Interfaces;
     using Microsoft.AspNetCore.Mvc;
 
     /// <summary>
     /// Controlador responsable de las operaciones de autenticación.
     /// </summary>
-    [Route("auth/login")]
+    [Route("auth")]
     [ApiController]
     public class AuthController : ControllerBase
     {
@@ -34,7 +34,7 @@ namespace CCL.API.Controllers
         /// <returns>
         /// Una respuesta HTTP con el resultado de la operación de inicio de sesión.
         /// </returns>
-        [HttpPost]
+        [HttpPost("login")]
         public IActionResult Login([FromBody] LoginDTO login)
         {
             var result = this.authService.Login(login);

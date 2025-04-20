@@ -5,7 +5,9 @@
 using CCL.Application.Services.Implementations;
 using CCL.Application.Services.Interfaces;
 using CCL.Application.Settings;
+using CCL.Domain.Repositories;
 using CCL.Infrastructure.DB;
+using CCL.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -58,6 +60,9 @@ builder.Services.AddAuthentication(options =>
 // Dependency Injections
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 
 var app = builder.Build();
 

@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Respositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.4" />
@@ -24,4 +20,8 @@
   <ItemGroup>
 	  <AdditionalFiles Include="..\stylecop.json" />
    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCL.Domain\CCL.Domain.csproj" />
+    <ProjectReference Include="..\CCL.Shared\CCL.Shared.csproj" />
+  </ItemGroup>
 </Project>

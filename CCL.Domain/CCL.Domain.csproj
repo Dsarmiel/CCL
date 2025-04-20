@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Exeptions\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -22,5 +16,9 @@
 		
   <ItemGroup>
   	<AdditionalFiles Include="..\stylecop.json" />
+  </ItemGroup>
+		
+  <ItemGroup>
+    <ProjectReference Include="..\CCL.Shared\CCL.Shared.csproj" />
   </ItemGroup>
 </Project>

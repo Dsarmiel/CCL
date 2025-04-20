@@ -1,6 +1,7 @@
 ﻿// <copyright file="ITokenService.cs" company="CCL">
 // Copyright (c) CCL. All rights reserved.
 // </copyright>
+
 // <summary>
 // Define la interfaz para el servicio de generación de tokens JWT.
 // </summary>

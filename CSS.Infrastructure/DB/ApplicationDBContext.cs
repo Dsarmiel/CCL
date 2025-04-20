@@ -4,6 +4,7 @@
 
 namespace CCL.Infrastructure.DB
 {
+    using CCL.Domain.Entities;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,12 @@ namespace CCL.Infrastructure.DB
     /// </summary>
     public class ApplicationDBContext : IdentityDbContext
     {
+
+        /// <summary>
+        /// Gets or sets obtiene o establece el conjunto de entidades de Productos en la base de datos.
+        /// </summary>
+        public DbSet<Product> Product { get; set; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="ApplicationDBContext"/> class.
         /// </summary>

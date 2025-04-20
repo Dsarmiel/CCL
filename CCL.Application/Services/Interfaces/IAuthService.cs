@@ -4,7 +4,7 @@
 
 namespace CCL.Application.Services.Interfaces
 {
-    using CCL.Application.DTOs;
+    using CCL.Application.DTOs.Auth;
     using CCL.Shared.Response;
 
     /// <summary>

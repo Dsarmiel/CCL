@@ -1,4 +1,7 @@
-﻿namespace CCL.Application.Services.Implementations
+﻿// <copyright file="TokenService.cs" company="CCL">
+// Copyright (c) CCL. All rights reserved.
+// </copyright>
+namespace CCL.Application.Services.Implementations
 {
     using System.IdentityModel.Tokens.Jwt;
     using System.Text;
